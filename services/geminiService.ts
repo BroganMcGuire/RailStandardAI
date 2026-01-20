@@ -35,7 +35,7 @@ export async function queryStandards(
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-3-pro-preview',
+      model: 'gemini-3-flash-preview',
       contents: `Context:\n${context}\n\nQuestion: ${question}`,
       config: {
         systemInstruction,
